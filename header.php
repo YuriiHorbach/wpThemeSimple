@@ -19,9 +19,9 @@ if(! defined('ABSPATH')){
 
 			<header class="site-header">
 				<!-- show blog page info  -->
-				<h1><?php echo get_bloginfo('name','display');?></h1> 
+				<h1 class="site-title"><?php echo get_bloginfo('name','display');?></h1> 
 				<?php 
-					wp_nav_menu( array( 'theme_location' => 'primary' 'fallback_cb' => false ) );
+					wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => false, 'menu_class' => 'menu site_menu' ) );
 				?>
 
 
