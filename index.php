@@ -3,16 +3,39 @@
 	/**
 	 * Index file
 	 */
-	get_header();
+	get_header(); ?>
 
-		if ( have_posts() ) : 
-		    while ( have_posts() ) : the_post(); ?>
-		         <?php the_title('<h2>','</h2>');?>
-		    <?php endwhile; 
-	  endif; 
-	 ?>
+	<div class="container">	
+		<?php	if ( have_posts() ) : 
+			    while ( have_posts() ) : the_post(); ?>
 
-	 <?php
-	 	get_footer();
-	 ?>
-	
+
+					
+						<article <?php post_class();?> id = "<?php echo get_the_id();?>">
+							<header class="article-header">
+						<?php
+							if( is_singular()){
+								the_title('<h1>',  '</h1>');
+							}
+							else{
+								 the_title('<h2> <a href = "'. get_permalink().'">',  '</a></h2>');
+							}
+							
+						?>
+								<div class="article-meta">
+									<?php echo get_the_date();?>
+									<?php the_category();?>
+									
+								</div>	
+							</header>
+							<?php the_content();?>
+						</article>
+					
+
+			        
+			    <?php endwhile; 
+		  endif; 
+		 ?>
+	</div>
+<?php get_footer(); ?>
+
