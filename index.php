@@ -23,8 +23,10 @@
 							
 						?>
 								<div class="article-meta">
+									<?php echo get_the_date();?>
 									<?php the_category();?>
-									
+									<?php the_tags();?>
+
 								</div>	
 							</header>
 							<?php the_content();?>

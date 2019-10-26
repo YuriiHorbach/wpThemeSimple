@@ -539,3 +539,13 @@ a img.aligncenter {
 .article-meta{
   font-size: 0.857em;
 }
+
+.post-categories{
+  margin: 0.25em 0;
+  padding: 0;
+}
+
+.post-categories li{
+  list-style: none;
+  display: inline-block;
+}
