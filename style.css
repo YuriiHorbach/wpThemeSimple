@@ -354,6 +354,11 @@ template {
   display: none;
 }
 
+img{
+  max-width: 100%;
+  height: auto; 
+}
+
 /* =WordPress Core
 -------------------------------------------------------------- */
 .alignnone {
