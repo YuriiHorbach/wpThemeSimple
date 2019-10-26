@@ -23,7 +23,6 @@
 							
 						?>
 								<div class="article-meta">
-									<?php echo get_the_date();?>
 									<?php the_category();?>
 									
 								</div>	
