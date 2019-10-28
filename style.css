@@ -523,6 +523,16 @@ a img.aligncenter {
  color: white;
 }
 
+.site-footer{
+  background: #000;
+  color: white;
+  padding: 1em;
+}
+
+.site-footer, .copyrigth{
+  text-align: center;
+}
+
 /* Container */
 
 .container{
@@ -570,3 +580,6 @@ a img.aligncenter {
   display: inline-block;
 }
 
+.copyrigth{
+
+}
