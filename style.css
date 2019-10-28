@@ -541,6 +541,17 @@ a img.aligncenter {
   margin: 1em auto;
 }
 
+.hentry footer{
+  background: #000;
+  color: white;   
+  padding: 10px;  
+}
+
+.hentry footer a{
+  color: white;   
+  text-decoration: underline;
+}
+
 .article-meta{
   font-size: 0.857em;
 }
@@ -550,7 +561,12 @@ a img.aligncenter {
   padding: 0;
 }
 
+.article-header a{
+  color: #000;
+  text-decoration: none;
+}
 .post-categories li{
   list-style: none;
   display: inline-block;
 }
+
