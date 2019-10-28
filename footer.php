@@ -10,11 +10,16 @@ if(! defined('ABSPATH')){
 ?>
 
 	<footer class="site-footer">
+
+		<?wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => false, 'menu_class' => 'menu footer_menu' ) );?>
 		<p class="copyrigth">
 			<?php echo __('Copyrigth &copy;','st').' '.get_bloginfo('name');?>
 		</p>
-	</footer>
 
+		
+				
+	</footer>
+	
 
 	<?php wp_footer();?>
 </body>
