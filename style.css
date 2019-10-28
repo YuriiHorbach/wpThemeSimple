@@ -543,7 +543,7 @@ a img.aligncenter {
   display: inline-block;
 }
 
-.footer_menu li a{
+.footer_menu li a, .sidebar-footer a{
   color: white;
   padding: 0.5em;
   display: block;
@@ -551,10 +551,28 @@ a img.aligncenter {
   font-size: 0.8em;
 }
 
-.footer_menu li a:hover, .footer_menu li a:focus {
+.footer_menu li a:hover, 
+.footer_menu li a:focus, 
+.sidebar-footer a:hover, 
+.sidebar-footer a:focus {
  color: rgba(255,255,255,0.7);;
 }
 
+.sidebar-footer{
+  max-width: 300px;
+  width: 90%;
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.sidebar-footer ul, .sidebar-footer ol{
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-footer ul li, .sidebar-footer ol li{
+  list-style: none;
+}
 /* Container */
 
 .container{

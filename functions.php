@@ -86,10 +86,9 @@ add_action( 'after_setup_theme', 'st_setup' );
 
 add_action( 'widgets_init', 'st_register_sidebars' );
 function st_register_sidebars() {
-    /* Register the 'primary' sidebar. */
     register_sidebar(
         array(
-            'id'            => 'primary',
+            'id'            => 'footer1',
             'name'          => __( 'Footer Sidebar' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
