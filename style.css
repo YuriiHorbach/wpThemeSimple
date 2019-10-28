@@ -573,6 +573,17 @@ a img.aligncenter {
 .sidebar-footer ul li, .sidebar-footer ol li{
   list-style: none;
 }
+
+/*.sidebar-footer, .widget-title(){
+  margin: 0 0 1em 0;
+}*/
+
+ .widget{
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+
 /* Container */
 
 .container{
